@@ -1,0 +1,100 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sri Shiva Priya Provisions</title>
+    <link rel="icon" type="image/x-icon" href="./img/Main_logo.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="header">
+        <a href="#" class="logo-link">
+            <img src="img/logo_01.png" class="logo" alt="SSPV Logo">
+            <span class="logo-text">SSPP</span>
+        </a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Categories</a>
+                    <div class="dropdown-content">
+                      <a href="./dry_fruit.html">Dry Fruits</a>
+                      <a href="./pooja_items.html">Pooja Items</a>
+                      <a href="./spices.html">Spices</a>
+                      <a href="./seeds.html">Seeds</a>
+                      <a href="./pantry.html">Pantry</a>
+                      <a href="./reagents.html">Reagents</a>
+                    </div>
+                  </li>
+                <li><a href="blog.html">Spotlight</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="lg-bag"><a class="active" href="cart.html"><i class='bx bx-shopping-bag' ></i></a></li>
+                <a href="#" id="close"><i class='bx bx-x'></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class='bx bx-shopping-bag' ></i></a>
+            <i id="bar" class='bx bx-menu'></i>
+        </div>
+    </section>
+
+    <section id="page-header" class="cart-header">
+        <h2>#ReviewYourItems</h2>
+        <p>Update Quantities or Remove Items.</p>
+    </section>
+
+    <section id="cart" class="section-p1">
+        <table id="cart-table">
+            <thead>
+                <tr>
+                    <td>Remove</td>
+                    <td>Image</td>
+                    <td>Product</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                    <td>Subtotal</td>
+                </tr>
+            </thead>
+            <tbody id="cart-items">
+            </tbody>
+        </table>
+    </section>
+
+    <section id="cart-add" class="section-p1">
+        <div id="coupon">
+            <h3>Apply Coupon</h3>
+            <div>
+                <input type="text" id="coupon-code" placeholder="Enter Your Coupon">
+                <button id="apply-coupon">Apply</button>
+            </div>
+        </div>
+
+        <div id="subtotal">
+            <h3>Cart Total</h3>
+            <table id="subtotal-table">
+                <tr>
+                    <td>Cart Subtotal</td>
+                    <td id="cart-subtotal">₹0</td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td>Free</td>
+                </tr>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td><strong id="total-price">₹0</strong></td>
+                </tr>
+            </table>
+            <a href="./Thank_You/thank_you.html"><button id="place-order">Place Order</button></a>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
